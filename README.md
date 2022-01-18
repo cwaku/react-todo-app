@@ -76,7 +76,7 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/cwaku/math-magicians/issues).
+Feel free to check the [issues page](https://github.com/cwaku/react-todo-app/issues).
 
 ## Show your support
 
