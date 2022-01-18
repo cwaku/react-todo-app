@@ -1,5 +1,5 @@
-import React from "react";
-import styles from "./TodoItem.module.css";
+import React from 'react';
+import styles from './TodoItem.module.css';
 
 class TodoItem extends React.Component {
   state = {
