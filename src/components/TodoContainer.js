@@ -5,14 +5,14 @@ import Header from './Header';
 import InputTodo from './InputTodo';
 
 const TodoContainer = () => {
-  const [todos, setTodos] = useState(getInitialTodos());
-
   function getInitialTodos() {
     // getting stored items
     const temp = localStorage.getItem('todos');
     const savedTodos = JSON.parse(temp);
     return savedTodos || [];
   }
+
+  const [todos, setTodos] = useState(getInitialTodos());
 
   useEffect(() => {
     // storing todos items
@@ -51,7 +51,8 @@ const TodoContainer = () => {
     setTodos(
       todos.map((todo) => {
         if (todo.id === id) {
-          todo.title = updatedTitle;
+          // eslint-disable-next-line no-param-reassign
+          todo.title = updatedTitle; // Check and fix later
         }
         return todo;
       }),

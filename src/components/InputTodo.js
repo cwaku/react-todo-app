@@ -1,3 +1,5 @@
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable react/prop-types */
 import React, { useState } from 'react';
 
 const InputTodo = (props) => {
@@ -20,7 +22,8 @@ const InputTodo = (props) => {
         title: '',
       });
     } else {
-      alert('Please write item');
+      // eslint-disable-next-line no-alert
+      alert('Please write item'); // Use better way to show error message later
     }
   };
 
@@ -34,7 +37,7 @@ const InputTodo = (props) => {
         name="title"
         onChange={onChange}
       />
-      <button className="input-submit">Submit</button>
+      <button type="button" className="input-submit">Submit</button>
     </form>
   );
 };
