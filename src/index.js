@@ -1,15 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './App.css';
 import reportWebVitals from './reportWebVitals';
-import TodoContainer from "./components/TodoContainer"
+import TodoContainer from './components/TodoContainer';
 
 ReactDOM.render(
   <React.StrictMode>
-  <TodoContainer />,
+    <TodoContainer />
+    ,
   </React.StrictMode>,
-  document.getElementById("root")
-  );
+  document.getElementById('root'),
+);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
